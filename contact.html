@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelagia</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li class="navlink left"><a href="./index.html">Home</a></li>
+        <li class="navlink right"><a href="./gallery.html">Gallery</a></li>
+        <li class="navlink right"><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="main-container">
+      <h1>Kontakt</h1>
+      <!-- <p class="scroll" style="color: aliceblue">129px</p> -->
+      <section class="contact-content-wrapper">
+        <div class="form-wrapper">
+          <form id="contact-form">
+            <label for="name">Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+            /><br />
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@test.com"
+            /><br />
+            <label for="subject">Subject</label><br />
+            <select id="subject" name="subject">
+              <option value="info">Information</option>
+              <option value="warn">Warning</option>
+              <option value="feed">Feedback</option>
+            </select>
+            <label for="message">Message</label><br />
+            <textarea id="message" name="message" cols="20" rows="3"></textarea
+            ><br />
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="main-footer">
+      <p>Made with ❤️ by Marcin Malek</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
